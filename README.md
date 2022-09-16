@@ -14,3 +14,16 @@ We attempted to create a __ML-based music generator__ that can act as an assista
   * We used 93 songs from the __MAESTRO dataset__ which has classical piano pieces stored as __MIDI files__. Each file contained a __2D array__ where the __rows__ are __the possible notes (128)__ and the __columns__ are __the number of timesteps__. We recorded the notes played at each timestep and created a __dictionary__, with __keys__ corresponding to the __different note combinations in the training data__ and __values__ being __unique integers__. Lastly, the data was split to __50-timestep windows__ which formed the “context” for each prediction.
 * __P__: 
   * We defined and applied the __cross-entropy loss__ between the __predicted__ and __target__ labels as our standard metric for performance for both the __LogReg__ and __LSTM__ models.
+
+## Supplementary material
+__Links to LogReg-generated songs:__
+
+1-song trained logistic regression: [https://soundcloud.com/joan-shaho/1-song-trained-model-1](https://soundcloud.com/joan-shaho/1-song-trained-model-1)
+
+50%-trained logistic regression: [https://soundcloud.com/joan-shaho/new133s-last50](https://soundcloud.com/joan-shaho/new133s-last50)
+
+__Links to LSTM-generated songs:__
+
+1-song trained LSTM: [https://soundcloud.com/joan-shaho/lstm-15-001](https://soundcloud.com/joan-shaho/lstm-15-001)
+
+50%-trained LSTM: [https://soundcloud.com/joan-shaho/result-15-05](https://soundcloud.com/joan-shaho/result-15-05)
